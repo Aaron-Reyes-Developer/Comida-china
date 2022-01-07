@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_comida.css">
+    <link rel="stylesheet" href="index.html">
+    <link rel="icon" href="imagenes/icono.gif">
+    <title>Menu comida</title>
+
+    <!-- FUNETES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
+
+
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/530f126b4a.js" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    <!-- ////////////////////       CABECERA        ////////////////////-->
+    <head>
+        
+        <div class="header">
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+            <h1>ECUATORIANA</h1>
+            
+        </div>
+    </head>
+
+
+    <!-- ////////////////////       TARGETAS        ////////////////////-->
+    <section class="seccion_targetas">
+        <h2>MENU</h2>
+        <div class="row">
+
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="data:image/jpeg;base64,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" alt="">
+                    </div>
+                    <p id="nombre">Ceviche</p>
+                    <p id="precio">Precio: $7</p>
+    
+                </div>
+            </div>
+            
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="https://www.laylita.com/recetas/wp-content/uploads/2009/04/Bistec-de-carne-con-huevo-frito-o-churrasco-ecuatoriano.jpg" alt="">
+                    </div>
+                    <p id="nombre">Churrazco</p>
+                    <p id="precio">Precio: $4</p>
+    
+                </div>
+            </div>
+
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="https://tamalesmexicanos.net/wp-content/uploads/2021/07/cuy-asado-con-papas.jpg" alt="">
+                    </div>
+                    <p id="nombre">Cuy Asado</p>
+                    <p id="precio">Precio: $8</p>
+    
+                </div>
+            </div>
+
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="https://recetas123.net/wp-content/uploads/2019/08/Encocado-de-camarón.jpg" alt="">
+                    </div>
+                    <p id="nombre">Encocado de Camarones</p>
+                    <p id="precio">Precio: $3</p>
+    
+                </div>
+            </div>
+            
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="https://www.tqma.com.ec/images/com_yoorecipe/banner_superior/12125_1.jpg" alt="">
+                    </div>
+                    <p id="nombre">Fritada</p>
+                    <p id="precio">Precio: $2</p>
+    
+                </div>
+            </div>
+            
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="https://recetas123.net/wp-content/uploads/hornado.jpg" alt="">
+                    </div>
+                    <p id="nombre">Hornado</p>
+                    <p id="precio">Precio: $5</p>
+    
+                </div>
+            </div>
+
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="https://recetas123.net/wp-content/uploads/maito.jpg" alt="">
+                    </div>
+                    <p id="nombre">Maito de pescado</p>
+                    <p id="precio">Precio: $6</p>
+    
+                </div>
+            </div>
+
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="https://cdn7.kiwilimon.com/brightcove/8201/8201.jpg" alt="">
+                    </div>
+                    <p id="nombre">Humitas</p>
+                    <p id="precio">Precio: $1.50</p>
+    
+                </div>
+            </div>
+
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="imagenes/comida/comida_uno.jpg" alt="">
+                    </div>
+                    <p id="nombre">Nombre comida</p>
+                    <p id="precio">Precio: $7</p>
+    
+                </div>
+            </div>
+            
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="imagenes/comida/comida_uno.jpg" alt="">
+                    </div>
+                    <p id="nombre">Nombre comida</p>
+                    <p id="precio">Precio: $7</p>
+    
+                </div>
+            </div>
+
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="imagenes/comida/comida_uno.jpg" alt="">
+                    </div>
+                    <p id="nombre">Nombre comida</p>
+                    <p id="precio">Precio: $7</p>
+    
+                </div>
+            </div>
+
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="imagenes/comida/comida_uno.jpg" alt="">
+                    </div>
+                    <p id="nombre">Nombre comida</p>
+                    <p id="precio">Precio: $7</p>
+    
+                </div>
+            </div>
+
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="imagenes/comida/comida_uno.jpg" alt="">
+                    </div>
+                    <p id="nombre">Nombre comida</p>
+                    <p id="precio">Precio: $7</p>
+    
+                </div>
+            </div>
+            
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="imagenes/comida/comida_uno.jpg" alt="">
+                    </div>
+                    <p id="nombre">Nombre comida</p>
+                    <p id="precio">Precio: $7</p>
+    
+                </div>
+            </div>
+
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="imagenes/comida/comida_uno.jpg" alt="">
+                    </div>
+                    <p id="nombre">Nombre comida</p>
+                    <p id="precio">Precio: $7</p>
+    
+                </div>
+            </div>
+
+            <div class="espaseado_targeta col-12 col-sm-6 col-md-3">
+                <div class="targeta ">
+
+                    <div class="contenedor_imagen">
+                        <img src="imagenes/comida/comida_uno.jpg" alt="">
+                    </div>
+                    <p id="nombre">Nombre comida</p>
+                    <p id="precio">Precio: $7</p>
+    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- SCRIP BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
